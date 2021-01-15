@@ -116,6 +116,7 @@
     display: flex;
     flex: 0 0 10%;
     width: 150px;
+    height: 70px;
     padding: 15px 0;
     margin: auto 0;
   }
@@ -167,13 +168,13 @@
     display: flex;
     width: 100%;
     background-size: cover;
-    margin: 50px 0;
+    margin-bottom: 50px;
   }
   
   .line {
     display: flex;
     flex-direction: column;
-    height: 190px;
+    height: 170px;
     width: 3px;
     background-color: var(--color-main);
     margin-bottom: 35px;
@@ -184,7 +185,7 @@
     flex-direction: column;
     max-width: 1000px;
     border: none;
-    padding: 50px 0 150px 350px;
+    padding: 150px 0 50px 350px;
     margin: 0 auto;
     background: url(/img/light.png) no-repeat 15px 50px;
   }
@@ -196,7 +197,7 @@
   .hero__title {
     display: flex;
     font-weight: 800;
-    color: var(--color-dark-gray);
+    color: #000000;
     font-size: 50px;
     margin-top: 0;
     margin-bottom: 15px;
@@ -207,7 +208,7 @@
     font-weight: 700;
     color: var(--color-main);
     margin-top: 0;
-    font-size: 32px;
+    font-size: 50px;
     padding-left: 15px;
   }
   
@@ -365,7 +366,8 @@ tr {
   
   .footer__logo {
     display: flex;
-    width: 200px;
+    width: 180px;
+    height: 70px;
     padding: 15px 0;
     margin: auto 0;
   }
@@ -386,18 +388,17 @@ tr {
   }
   
   .footer-contacts-address {
-    display: flex;
+    display: inline-block;
     font-weight: 500;
-    padding-bottom: 25px;
+    padding-left: 10px;
   }
 
   .footer-contacts-tel {
-    display: flex;
-    padding-bottom: 25px;
+    vertical-align: center;
   }
 
   .footer-contacts-email {
-    display: flex;
+    font-size: 12px;
   }
 
   .copy {
@@ -406,6 +407,38 @@ tr {
     padding: 15px 10px;
   }
 
+  .social__item {
+    display: flex;
+    align-items: center;
+  }
+
+.social__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.social__icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+} 
+
+.social__icon-tel {
+  background: url(/img/tel.png) no-repeat;
+  background-size: cover;
+}
+.social__icon-adress {
+  background: url(/img/adress.png) no-repeat;
+  background-size: cover;
+}
+.social__icon-insta {
+  background: url(/img/insta.png) no-repeat;
+  background-size: cover;
+}
+.social__icon-mail {
+  background: url(/img/mail.png) no-repeat;
+  background-size: cover;
+}
 
   @media (max-width: 479px) {
 
@@ -421,6 +454,7 @@ tr {
 
     .header__logo {
       width: 100px;
+      height: 40px;
       flex: 0 0 auto;
       padding: 10px 0;
     }
@@ -457,7 +491,7 @@ tr {
     .line {
       display: flex;
       flex-direction: column;
-      height: 135px;
+      height: 110px;
       width: 3px;
       background-color: var(--color-main);
       margin-bottom: 35px;
@@ -470,7 +504,7 @@ tr {
     .hero__title-320 {
       display: flex;
       font-weight: 800;
-      color: var(--color-dark-gray);
+      color: #000000;
       font-size: 32px;
       margin-top: 0;
       margin-bottom: 15px;
@@ -481,7 +515,7 @@ tr {
       font-weight: 700;
       color: var(--color-main);
       margin-top: 0;
-      font-size: 20px;
+      font-size: 32px;
       padding-left: 15px;
     }
     
@@ -528,6 +562,13 @@ tr {
       font-size: 12px;
     }
   }
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-white);
+    font-size: 14px;
+    margin: auto 0;
+  }
 
   @media (min-width: 480px) and (max-width: 768px) {
 
@@ -543,6 +584,7 @@ tr {
 
     .header__logo {
       width: 100px;
+      height: 40px;
       flex: 0 0 auto;
       padding: 10px 0;
     }
@@ -572,7 +614,7 @@ tr {
     } 
 
     .line {
-      height: 135px;
+      height: 110px;
       width: 3px;
     }
 
@@ -586,7 +628,7 @@ tr {
     }
 
     .hero__desc {
-      font-size: 20px;
+      font-size: 32px;
     }
     
     .hero__desc-two {
@@ -618,6 +660,7 @@ tr {
 
     .header__logo {
       width: 130px;
+      height: 50px;
       flex: 0 0 auto;
       padding: 10px 0;
     }
@@ -647,7 +690,7 @@ tr {
     } 
 
     .line {
-      height: 135px;
+      height: 145px;
       width: 3px;
     }
 
@@ -661,7 +704,7 @@ tr {
     }
 
     .hero__desc {
-      font-size: 20px;
+      font-size: 44px;
     }
     
     .hero__desc-two {
