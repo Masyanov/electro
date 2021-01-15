@@ -116,6 +116,7 @@
     display: flex;
     flex: 0 0 10%;
     width: 150px;
+    height: 70px;
     padding: 15px 0;
     margin: auto 0;
   }
@@ -421,6 +422,7 @@ tr {
 
     .header__logo {
       width: 100px;
+      height: 40px;
       flex: 0 0 auto;
       padding: 10px 0;
     }
@@ -543,6 +545,7 @@ tr {
 
     .header__logo {
       width: 100px;
+      height: 40px;
       flex: 0 0 auto;
       padding: 10px 0;
     }
@@ -618,6 +621,7 @@ tr {
 
     .header__logo {
       width: 130px;
+      height: 50px;
       flex: 0 0 auto;
       padding: 10px 0;
     }
