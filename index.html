@@ -6,9 +6,10 @@
     <title>"Электромонтажные работы в Воронеже"</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+
 </head>
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <div class="header__container">
         <a href="" class="header__logo">
             <img src="img/logo.png" alt="Электромонтажные работы логотип">
@@ -36,29 +37,38 @@
     <section class="hero">
         <div class="hero__container">
             <div class="hero__content">
-                <h1 class="hero__title">ЭЛЕКТРОМОНТАЖНЫЕ РАБОТЫ в Воронеже</h1>
-                <h1 class="hero__title-320">ЭЛЕКТРО- МОНТАЖНЫЕ РАБОТЫ в Воронеже</h1>
+                <h1 class="hero__title">ЭЛЕКТРОМОНТАЖНЫЕ РАБОТЫ РАБОТЫ В ВОРОНЕЖЕ</h1>
+                <h1 class="hero__title-320">ЭЛЕКТРО- МОНТАЖНЫЕ РАБОТЫ В ВОРОНЕЖЕ</h1>
                 <span class="line">
-                <p class="hero__desc">В ОФИСЕ КВАРТИРЕ КОТТЕДЖЕ</p>
+                <p class="hero__desc">ОФИСЫ КВАРТИРЫ КОТТЕДЖИ</p>
                 </span>
             </div>
         </div>        
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <h2 class="sub-title">О нас</h2>
             <p class="aboutus__desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis expedita qui corporis sequi et deserunt nihil hic possimus, minus, ab nisi vitae suscipit quis illo laboriosam, reiciendis eligendi consequuntur nemo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, labore exercitationem aliquid nostrum maiores voluptates aut! Nobis ea nostrum, id rem dolorem ipsum aliquam sapiente architecto maiores! Quos, facere in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ipsum corrupti iste necessitatibus nostrum odit iure alias qui, corporis voluptatibus ullam commodi ad maiores provident non porro, consequatur quaerat earum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, sint. Reprehenderit officia vel et, esse repellendus similique sunt velit odio ad necessitatibus assumenda hic ratione eum voluptate sit veritatis perferendis.
-            </p>
+Наша бригада профессионально занимается электромонтажными работами любой сложности. Большой опыт работы. Выполняем полный и частичный электромонтаж по демократичным ценам в квартирах, домах, офисах, производственных помещениях. Работаем только профессиональным инструментом.
+Быстрое и качественное выполнение работ. Одни из лучших расценок на электромонтажные работы в Воронеже. Мы дипломированные специалисты с подтверждённой группой допуска.
+        </p>
             <div class="about__content">
-                <div class="about__item about__img"></div>
-                <div class="about__item frame_blc"><iframe width="560" height="315" src="https://www.youtube.com/embed/cMaa5SFNYMg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <ul class="about__list">
+                    <li class="about__item">
+                        <a href="https://www.instagram.com/electr1kvrn" class="icon-insta"></a>
+                        <a href="https://www.instagram.com/electr1kvrn" class="icon-desc">Мы в instagram</a>
+                    </li>
+                    <li class="about__item">
+                        <a href="https://www.youtube.com/channel/UC95CjEamuCuqfMyEMsIpbig" class="icon-you"></a>
+                        <a href="https://www.youtube.com/channel/UC95CjEamuCuqfMyEMsIpbig" class="icon-desc">Мы в YouTube</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section class="price">
+    <section id="price" class="price">
         <div class="container">
             <h2 class="sub-title">Цены на наши услуги</h2>
             <table class="table" cellspacing="0">
@@ -97,9 +107,12 @@
                     </tr>
                 </tbody>
             </table>
-            <button class="btn-reset download">
-                <a href="PRAJS_LIST.docx" download>Подробный прайс</a>
+            <button class="btn-reset">
+                <a class="download" href="#popup">Смотреть подробный прайс</a>
             </button>
+            <a href="/PRAJS_LIST.docx" class="download__dox" download>Скачать прайс</a>
+ 
+            <!-- Button trigger modal -->
         </div>
     </section>
 
@@ -159,6 +172,16 @@
               </p>
         </div>
     </footer>
-    
+    <div id="popup" class="popup">
+        <a href="#header" class="popup__area"></a>
+<div class="popup__body">
+    <div class="popup__content">
+        <a href="#header" class="popup__close">X</a>
+        <div class="popup__title">
+            <img src="/img/price.jpg" alt="">
+        </div>
+    </div>
+</div>
+    </div>
 </body>
 </html>
