@@ -327,12 +327,15 @@ tr {
 }
 
 .download {
-  padding: 20px 100px;
+  display: block;
+  width: 290px;
+  padding: 20px 40px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   color: #fff;
   border: 2px solid var(--color-main);
   background-color: var(--color-main);
+  margin-bottom: 10px;
 }
 .download:hover {
   color: var(--color-main);
@@ -341,10 +344,12 @@ tr {
   transition: color 500ms, background-color 500ms ease-in-out;
 }
 .download__dox {
-  padding: 20px 50px;
-  margin-left: 10px;
+  display: inline-block;
+  text-align: center;
+  width: 290px;
+  padding: 20px 40px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--color-main);
   background-color: #fff;
   border: 2px solid var(--color-main);
@@ -368,6 +373,10 @@ tr {
     padding: 40px 0;
   }
   
+  .footer__menu {
+    margin-right: 70px;
+  }
+
   .footer__logo {
     display: flex;
     width: 180px;
@@ -393,8 +402,7 @@ tr {
   
   .footer-contacts-address {
     display: inline-block;
-    font-weight: 500;
-    padding-left: 10px;
+    font-weight: 700;
   }
 
   .footer-contacts-tel {
@@ -428,19 +436,19 @@ tr {
 } 
 
 .social__icon-tel {
-  background: url(/img/tel.png) no-repeat;
+  background: url(/img/tel.png) center no-repeat;
   background-size: cover;
 }
 .social__icon-adress {
-  background: url(/img/adress.png) no-repeat;
+  background: url(/img/adress.png) center no-repeat;
   background-size: cover;
 }
 .social__icon-insta {
-  background: url(/img/insta.png) no-repeat;
+  background: url(/img/insta.png) center no-repeat;
   background-size: cover;
 }
 .social__icon-mail {
-  background: url(/img/mail.png) no-repeat;
+  background: url(/img/mail.png) center no-repeat;
   background-size: cover;
 }
 
@@ -638,10 +646,7 @@ tr {
     }
 
     .footer__container {
-      display: flex;
-      justify-content: space-between;
       flex-direction: column;
-      padding: 40px 0;
     }
 
     .download {
@@ -649,9 +654,13 @@ tr {
       font-size: 18px;
       font-weight: 500;
     }
+    .price {
+      margin-bottom: 50px;
+    }
 
     .table {
       font-size: 12px;
+      margin-bottom: 25px;
     }
   }
   .footer__contacts {
@@ -735,6 +744,20 @@ tr {
     .about__list {
       flex-direction: column;
     }
+
+    .price {
+      margin-bottom: 50px;
+    }
+
+    .table {
+      font-size: 12px;
+      margin-bottom: 25px;
+    }
+    
+    .footer__container {
+      flex-direction: column;
+    }
+
   }
 
   @media (min-width: 768px) and (max-width: 1200px) {
